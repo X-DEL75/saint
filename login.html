@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saint X Nagi | Admin Panels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Saint X Nagi</h1>
+    <p id="welcome-msg" class="neon-text"></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Business</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="logout-btn">Logout</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Saint X Nagi</strong>, a passionate tech enthusiast. I specialize in creating and selling <strong>admin panels</strong>.</p>
+  </section>
+
+  <section id="services">
+    <h2>My Business</h2>
+    <p>I provide high-quality admin panels to help businesses manage users, content, and analytics efficiently.</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div id="pricing-cards" class="pricing-cards"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <a href="https://t.me/YourTelegramUsername" target="_blank" class="contact-btn telegram">Telegram</a>
+    <a href="https://wa.me/YourWhatsAppNumber" target="_blank" class="contact-btn whatsapp">WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Saint X Nagi | Admin Panels</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ===== Dynamic Pricing Cards =====
+    const pricingContainer = document.getElementById('pricing-cards');
+    const prices = [
+      {size: '1GB', price: 500},
+      {size: '2GB', price: 1000},
+      {size: '3GB', price: 1500},
+      {size: '4GB', price: 2000},
+      {size: '5GB', price: 2500},
+      {size: '6GB', price: 3000},
+      {size: '7GB', price: 3500},
+      {size: '8GB', price: 4000},
+      {size: '9GB', price: 4500},
+      {size: '10GB', price: 5000},
+      {size: 'UNLI∞', price: 6000},
+    ];
+
+    prices.forEach(item => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.innerHTML = `
+        <h3>${item.size}</h3>
+        <p>₦${item.price}</p>
+        <a href="https://t.me/YourTelegramUsername" target="_blank" class="buy-btn">Buy Now</a>
+      `;
+      pricingContainer.appendChild(card);
+    });
+  </script>
+</body>
+</html>

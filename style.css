@@ -1,0 +1,194 @@
+/* Reset */
+body, h1, h2, p, ul, li /* Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #0ff, #f0f, #ff0);
+    background-size: 600% 600%;
+    animation: neonBG 20s ease infinite;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Neon background animation */
+@keyframes neonBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #ff0;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #0ff;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #fff, 0 0 10px #0ff;
+}
+
+header nav a:hover {
+    text-shadow: 0 0 15px #ff0, 0 0 25px #f0f;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #f0f;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0, 0 0 10px #f0f;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #f0f;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ff0;
+    text-shadow: 0 0 5px #ff0, 0 0 10px #f0f;
+}
+
+.card p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #0ff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #f0f;
+    box-shadow: 0 0 15px #ff0, 0 0 25px #f0f;
+}
+
+/* Contact Buttons */
+.contact-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #fff;
+}
+
+.contact-btn.telegram {
+    background-color: #0088cc;
+    color: #fff;
+    box-shadow: 0 0 10px #0088cc, 0 0 20px #00cfff;
+}
+
+.contact-btn.telegram:hover {
+    background-color: #00cfff;
+    box-shadow: 0 0 15px #00cfff, 0 0 30px #0088cc;
+}
+
+.contact-btn.whatsapp {
+    background-color: #25D366;
+    color: #fff;
+    box-shadow: 0 0 10px #25D366, 0 0 20px #00ff88;
+}
+
+.contact-btn.whatsapp:hover {
+    background-color: #00ff88;
+    box-shadow: 0 0 15px #00ff88, 0 0 30px #25D366;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #f0f;
+}
+#logout-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px #ff007f, 0 0 40px #ff007f;
+}
+/* Neon fade-out animation */
+@keyframes neonFadeOut {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 0 0 #ff007f, 0 0 0 #ff007f, 0 0 0 #ff007f;
+  }
+}
+
+.fade-out {
+  animation: neonFadeOut 1s forwards;
+}
+body.fade-out {
+  animation: neonFadeOut 1s forwards;
+}
+body.fade-out {
+  animation: neonFadeOut 1s forwards;
+}
+
+@keyframes neonFadeOut {
+  0% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  100% {
+    opacity: 0;
+    filter: brightness(0);
+  }
+}
